@@ -1,52 +1,43 @@
 # Merhaba, ben Nusret Can Taşdelen 👋
 
-Ankara Yıldırım Beyazıt Üniversitesi Bilgisayar Programcılığı öğrencisiyim. Lise eğitimimi yazılım alanında tamamladım ve şu anda C#, Java, SQL Server, Web geliştirme ve Python tabanlı servisler üzerine projeler geliştiriyorum.
+Ankara Yıldırım Beyazıt Üniversitesi Bilgisayar Programcılığı öğrencisiyim. Yazılım alanındaki lise eğitimimin üzerine C#/.NET, Python ve TypeScript ile gerçek bir ihtiyacı çalışan, test edilen ve sınırları açıkça belgelenen yazılımlara dönüştürmeye odaklanıyorum.
 
-Eylül 2026 döneminde 4 ay süreli zorunlu stajımı gerçekleştirebileceğim, yazılım geliştirme ve otomasyon alanlarında kendimi geliştirebileceğim bir uzun dönem staj fırsatı arıyorum.
+Benim için iyi bir proje yalnızca güzel görünen bir ekran değildir: iş kuralı, veri modeli, hata davranışı, güvenlik sınırı ve doğrulama kanıtı birlikte anlaşılabilmelidir.
 
-## 🚀 İlgi Alanlarım
+## Öne çıkan projeler
 
-* Masaüstü otomasyon sistemleri
-* Veritabanı tasarımı ve SQL sorguları
-* Web geliştirme
-* Python servisleri
-* OCR ve görüntü işleme
-* Endüstriyel otomasyon yazılımları
+| Proje | Problem ve yaklaşım | Teknoloji | Doğrulama |
+|---|---|---|---|
+| [Kameralı Plaka Tanımalı Otopark Otomasyonu](https://github.com/cantsdlnn/kamerali-plaka-tanimali-otopark-otomasyonu) | Kamera/OCR, araç giriş-çıkışı, park yeri, ücret ve ödeme akışlarını tek sistemde birleştirir. PBKDF2 parola geçişi, yerel OCR sınırı ve tehdit modeli içerir. | C#, .NET 8 WinForms, SQL Server, FastAPI, EasyOCR, OpenCV, Tesseract | 21 xUnit + 27 pytest, CI, bağımlılık taraması |
+| [TraceAI Karar Defteri](https://github.com/cantsdlnn/traceai-karar-defteri) | Bir sınıflandırmanın sonucuyla birlikte model/kural sürümünü, gerekçesini, insan kararını ve itirazını denetlenebilir biçimde kaydeder. Yalnız sentetik veri kullanır. | Python, FastAPI, SQLite, hash zinciri | 13 test, %92 kapsam, model/veri kartı, CI, Docker |
+| [VeriYaşam](https://github.com/cantsdlnn/veri-yasam) | Veri envanteri ve saklama süresini izler; anonimleştirme/silme kararını otomatikleştirmek yerine gerekçeli insan onayına bırakır. | Python, FastAPI, SQLite | 8 test, audit bütünlük testi, CI, Docker |
+| [Sıra Açık](https://github.com/cantsdlnn/sira-acik) | Küçük işletmeler için telefon veya e-posta toplamadan canlı sıra yönetir; beklemeyi medyan süreyle açıklanabilir biçimde tahmin eder. | .NET 8, ASP.NET Core, EF Core, SQLite | 8 test, SQLite entegrasyon testi, CI, Docker |
+| [Adil Paylaş](https://github.com/cantsdlnn/adil-paylas) · [Canlı demo](https://cantsdlnn.github.io/adil-paylas/) | Ortak harcamaları tam sayı kuruşla böler, artıkları deterministik dağıtır ve küçük gruplarda en az transferli kapatma planını arar. | TypeScript, Vite, PWA | 15 test, özellik tabanlı testler, CI |
+| [Son Kullan](https://github.com/cantsdlnn/son-kullan) · [Canlı demo](https://cantsdlnn.github.io/son-kullan/) | Ev stoğunu son kullanma tarihine göre önceliklendirir, çevrimdışı çalışır ve israf eğilimini yerel olarak görünür kılar. | TypeScript, Vite, PWA | 25 test, tarih sınır testleri, CI |
 
-## 🛠️ Kullandığım Teknolojiler
+## Nasıl çalışıyorum?
 
-* C#
-* Windows Forms
-* SQL Server
-* Java
-* Mobil Geliştirme
-* HTML, CSS, JavaScript
-* PHP
-* WordPress
-* Python
-* FastAPI
-* Git & GitHub
+- Koddan önce gereksinimleri ve kabul ölçütlerini yazıyorum.
+- İş kurallarını arayüzden ayırıp birim ve entegrasyon testleriyle doğruluyorum.
+- Kişisel veri toplamamayı, yetki sınırını ve saklama davranışını tasarım kararı olarak ele alıyorum.
+- CI, bağımlılık taraması, güvenlik politikası ve mimari karar kayıtlarını projenin parçası sayıyorum.
+- Eksik kalan noktaları “üretime hazır” diye gizlemek yerine README ve tehdit modelinde açıkça belirtiyorum.
 
-## 📌 Öne Çıkan Projelerim
+## Yapay zekâyı nasıl kullanıyorum?
 
-### Kameralı Plaka Tanımalı Otopark Otomasyonu
+Üretken yapay zekâyı araştırma, alternatif tasarım üretme, test senaryolarını genişletme, kod inceleme ve dokümantasyon desteği için eşli geliştirme aracı olarak kullanıyorum. Çıktıları doğrudan doğru kabul etmiyorum; mimari karar, veri sınırı, güvenlik değerlendirmesi ve nihai doğrulama sorumluluğunu üstleniyorum.
 
-C# Windows Forms, SQL Server ve Python FastAPI tabanlı OCR servisi kullanılarak geliştirilmiş bir otopark otomasyon projesidir. Kamera görüntüsünden plaka okuma, araç giriş/çıkış yönetimi, park yeri takibi, ödeme ve raporlama gibi özellikler içerir.
+Her projede neyin AI desteğiyle, neyin deterministik çalışma zamanı koduyla yapıldığını açıklayan bir `AI_USAGE.md` bulunur. Böylece AI kullanımını saklamadan, kullandığım kodu ve verdiğim kararları anlayabildiğimi gösteriyorum.
 
-### Araç Kiralama Otomasyonu
+## Teknik odak
 
-Nesne yönelimli programlama mantığıyla geliştirilmiş C# Windows Forms tabanlı araç kiralama sistemidir. Araç, müşteri, kiralama ve kullanıcı işlemlerini yönetmeyi amaçlar.
+`C#` · `.NET 8` · `ASP.NET Core` · `WinForms` · `SQL Server` · `EF Core` · `Python` · `FastAPI` · `TypeScript` · `SQLite` · `OpenCV` · `GitHub Actions` · `Docker`
 
-### Veritabanı Tasarım Projesi
+## Kısa İngilizce özet
 
-SQL Server üzerinde en az 15 tablo içeren, ilişkisel veritabanı mantığına uygun tasarlanmış proje çalışmasıdır. ER diyagramı, örnek veriler ve SQL sorguları içerir.
+I am a Computer Programming student focused on turning everyday and operational problems into tested, documented software. My portfolio covers .NET, Python/FastAPI, TypeScript, computer vision, privacy-aware workflows, auditable decision systems, CI, and honest AI-assisted development disclosures.
 
-### Eğitim İçerik Web Sitesi
+## İletişim
 
-HTML, CSS, JavaScript ve PHP kullanılarak geliştirilmiş, eğitim materyallerinin listelenmesini ve PDF içeriklerinin görüntülenmesini sağlayan web projesidir.
-
-## 📫 İletişim
-
-* LinkedIn: [LinkedIn profil linkin]
-* GitHub: [GitHub profil linkin]
-* E-posta: [tasdelennusretcan58@gmail.com]
+- GitHub: [@cantsdlnn](https://github.com/cantsdlnn)
+- E-posta: [tasdelennusretcan58@gmail.com](mailto:tasdelennusretcan58@gmail.com)
