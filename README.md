@@ -9,7 +9,10 @@ Benim için iyi bir proje yalnızca güzel görünen bir ekran değildir: iş ku
 | Proje | Problem ve yaklaşım | Teknoloji | Doğrulama |
 |---|---|---|---|
 | [Kameralı Plaka Tanımalı Otopark Otomasyonu](https://github.com/cantsdlnn/kamerali-plaka-tanimali-otopark-otomasyonu) | Kamera/OCR, araç giriş-çıkışı, park yeri, ücret ve ödeme akışlarını tek sistemde birleştirir. PBKDF2 parola geçişi, yerel OCR sınırı ve tehdit modeli içerir. | C#, .NET 8 WinForms, SQL Server, FastAPI, EasyOCR, OpenCV, Tesseract | 21 xUnit + 27 pytest, CI, bağımlılık taraması |
+| [Saha Pusulası](https://github.com/cantsdlnn/saha-pusulasi) | Saha işlerini SLA ve önemle sıralar; beceri, kapasite ve mesafeyle atama önerir. Atamayı insana bırakır, sürüm çakışmasını engeller ve sonucu denetim izine yazar. | Python, FastAPI, SQLite, Haversine | 10 test, %99 kapsam, CI, Docker |
 | [BelgeKalkan](https://github.com/cantsdlnn/belge-kalkan) | Metin, ekran görüntüsü ve taranmış PDF'deki T.C. kimlik, IBAN, telefon ve e-postayı yerel OCR ile bulur; hassas değere daraltılmış kutuları belge arka plan rengiyle doğal biçimde maskeler. PDF'yi eski metin katmanını taşımadan yeniden oluşturur. | Python, FastAPI, RapidOCR, ONNX Runtime, PyMuPDF | 36 test, %94 kapsam, gerçek OCR smoke testi, CI, Docker |
+| [DozHafıza](https://github.com/cantsdlnn/doz-hafiza) · [Canlı demo](https://cantsdlnn.github.io/doz-hafiza/) | İlaç planını ve günlük “aldım / atladım” kaydını sağlık verisini sunucuya göndermeden cihazda tutar; tıbbi karar üretmediği sınırını açıkça korur. | TypeScript, Vite, PWA, localStorage | 11 test, %100 satır kapsamı, biçim kontrolü, CI |
+| [Öğrenme Ritmi](https://github.com/cantsdlnn/ogrenme-ritmi) · [Canlı demo](https://cantsdlnn.github.io/ogrenme-ritmi/) | Konuları günlük dakika bütçesine sığdırır; tekrar sonucuna göre bir sonraki tarihi açık kurallarla hesaplar ve yedi günlük öğrenme etkinliğini gösterir. | TypeScript, Vite, PWA, localStorage | 13 test, %100 satır kapsamı, biçim kontrolü, CI |
 | [Ölçüm Pusulası](https://github.com/cantsdlnn/olcum-pusulasi) | Sınav maddelerini güçlük, ayırt edicilik ve KR-20 ile inceler; gerekçeli uyarı üretir, kararı öğretmende bırakır. | C#, .NET 8, ASP.NET Core | 5 xUnit, yöntem notu, CI, Docker |
 | [Yörünge Gözcü](https://github.com/cantsdlnn/yorunge-gozcu) · [Canlı demo](https://cantsdlnn.github.io/yorunge-gozcu/) | TLE verisini SGP4 ile ilerletip yer istasyonu için geçiş pencerelerini hesaplar; eski veriyi güncelmiş gibi göstermeyen örnek modu içerir. | TypeScript, Vite, satellite.js, SGP4 | 8 test, %96 satır kapsamı, bağımlılık denetimi, CI |
 | [TraceAI Karar Defteri](https://github.com/cantsdlnn/traceai-karar-defteri) | Bir sınıflandırmanın sonucuyla birlikte model/kural sürümünü, gerekçesini, insan kararını ve itirazını denetlenebilir biçimde kaydeder. Yalnız sentetik veri kullanır. | Python, FastAPI, SQLite, hash zinciri | 13 test, %92 kapsam, model/veri kartı, CI, Docker |
@@ -34,7 +37,7 @@ Her projede neyin AI desteğiyle, neyin deterministik çalışma zamanı koduyla
 
 ## Teknik odak
 
-`C#` · `.NET 8` · `ASP.NET Core` · `WinForms` · `SQL Server` · `EF Core` · `Python` · `FastAPI` · `TypeScript` · `SQLite` · `OpenCV` · `ONNX Runtime` · `SGP4` · `GitHub Actions` · `Docker`
+`C#` · `.NET 8` · `ASP.NET Core` · `WinForms` · `SQL Server` · `EF Core` · `Python` · `FastAPI` · `TypeScript` · `PWA` · `SQLite` · `OpenCV` · `ONNX Runtime` · `SGP4` · `GitHub Actions` · `Docker`
 
 ## Kısa İngilizce özet
 
